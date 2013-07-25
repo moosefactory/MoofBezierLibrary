@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BEDCEB4917A1C8BD004848D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDCEB4817A1C8BD004848D3 /* Cocoa.framework */; };
 		BEDCEB5317A1C8BD004848D3 /* MoofBezierLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCEB5217A1C8BD004848D3 /* MoofBezierLibrary.m */; };
+		BEDCEB5D17A1C8CB004848D3 /* NSBezierPath-Extras.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDCEB5917A1C8CB004848D3 /* NSBezierPath-Extras.h */; };
+		BEDCEB5E17A1C8CB004848D3 /* NSBezierPath-Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCEB5A17A1C8CB004848D3 /* NSBezierPath-Extras.m */; };
+		BEDCEB5F17A1C8CB004848D3 /* MFBezierPathCollider.h in Headers */ = {isa = PBXBuildFile; fileRef = BEDCEB5B17A1C8CB004848D3 /* MFBezierPathCollider.h */; };
+		BEDCEB6017A1C8CB004848D3 /* MFBezierPathCollider.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCEB5C17A1C8CB004848D3 /* MFBezierPathCollider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		BEDCEB5017A1C8BD004848D3 /* MoofBezierLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoofBezierLibrary-Prefix.pch"; sourceTree = "<group>"; };
 		BEDCEB5117A1C8BD004848D3 /* MoofBezierLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoofBezierLibrary.h; sourceTree = "<group>"; };
 		BEDCEB5217A1C8BD004848D3 /* MoofBezierLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoofBezierLibrary.m; sourceTree = "<group>"; };
+		BEDCEB5917A1C8CB004848D3 /* NSBezierPath-Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath-Extras.h"; sourceTree = "<group>"; };
+		BEDCEB5A17A1C8CB004848D3 /* NSBezierPath-Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath-Extras.m"; sourceTree = "<group>"; };
+		BEDCEB5B17A1C8CB004848D3 /* MFBezierPathCollider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBezierPathCollider.h; sourceTree = "<group>"; };
+		BEDCEB5C17A1C8CB004848D3 /* MFBezierPathCollider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBezierPathCollider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,10 @@
 			children = (
 				BEDCEB5117A1C8BD004848D3 /* MoofBezierLibrary.h */,
 				BEDCEB5217A1C8BD004848D3 /* MoofBezierLibrary.m */,
+				BEDCEB5917A1C8CB004848D3 /* NSBezierPath-Extras.h */,
+				BEDCEB5A17A1C8CB004848D3 /* NSBezierPath-Extras.m */,
+				BEDCEB5B17A1C8CB004848D3 /* MFBezierPathCollider.h */,
+				BEDCEB5C17A1C8CB004848D3 /* MFBezierPathCollider.m */,
 				BEDCEB4F17A1C8BD004848D3 /* Supporting Files */,
 			);
 			path = MoofBezierLibrary;
@@ -95,6 +107,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDCEB5D17A1C8CB004848D3 /* NSBezierPath-Extras.h in Headers */,
+				BEDCEB5F17A1C8CB004848D3 /* MFBezierPathCollider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDCEB5317A1C8BD004848D3 /* MoofBezierLibrary.m in Sources */,
+				BEDCEB5E17A1C8CB004848D3 /* NSBezierPath-Extras.m in Sources */,
+				BEDCEB6017A1C8CB004848D3 /* MFBezierPathCollider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

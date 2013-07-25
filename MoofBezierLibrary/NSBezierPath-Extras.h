@@ -1,12 +1,12 @@
 //
-//  MoofBezierLibrary.h
-//  MoofBezierLibrary
+//  NSBezierPath-Extras.h
+//  MFCGShapeBuilder
 /*
  
- .  /\/\/\__/\/\/\   .   Copyright (c)2013 Tristan Leblanc                .
- .  \/\/\/..\/\/\/   .   MooseFactory Software                            .
- .       |  |        .   tristan@moosefactory.eu                          .
- .       (oo)        .                                                    .
+.  /\/\/\__/\/\/\   .   Copyright (c)2013 Tristan Leblanc                .
+.  \/\/\/..\/\/\/   .   MooseFactory Software                            .
+.       |  |        .   tristan@moosefactory.eu                          .
+.       (oo)        .                                                    .
  
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
@@ -28,11 +28,16 @@
  
  */
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-#import "NSBezierPath-Extras.h"
-#import "MFBezierPathCollider.h"
 
-@interface MoofBezierLibrary : NSObject
+@interface NSBezierPath (Extras)
+
+-(CGPathRef)cgPath;
+
+-(BOOL)containsPoint:(NSPoint)point inFillArea:(BOOL)inFill;
+
++(NSBezierPath*)roundRectPath:(NSRect)frame radius:(float)radius;
++(NSBezierPath*)roundRectPath:(NSRect)frame radii:(float*)radii;
 
 @end

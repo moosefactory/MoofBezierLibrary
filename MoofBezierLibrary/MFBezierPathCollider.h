@@ -1,6 +1,6 @@
 //
-//  MoofBezierLibrary.h
-//  MoofBezierLibrary
+//  MFBezierPathCollider.h
+//  PathIntersectionLab
 /*
  
  .  /\/\/\__/\/\/\   .   Copyright (c)2013 Tristan Leblanc                .
@@ -30,9 +30,21 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NSBezierPath-Extras.h"
-#import "MFBezierPathCollider.h"
+@interface MFBezierPathCollider : NSObject
+{
+    NSSize          contextSize;
+    CGContextRef    computeContext;
+    CGContextRef    testContext;
+}
 
-@interface MoofBezierLibrary : NSObject
+-(id)initWithView:(NSView*)view;
+
+-(void)attachToView:(NSView*)inView;
+-(BOOL)setComputeContextSize:(NSSize)size;
+
+-(BOOL)pathIntersectPath:(CGPathRef)testPath versus:(CGPathRef)path;
+
+// To do
+//-(BOOL)pathIntersectPaths:(CGPathRef)testPath versus:(CGPathRef*)paths numPaths:(NSInteger)numPaths;
 
 @end
